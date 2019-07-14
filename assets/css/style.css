@@ -10,7 +10,7 @@ header{
 }
 
 .clearfix    {
-    width: 960px;
+    width: 960px;;
     margin: 0 auto;
     overflow: auto;   
 }
@@ -33,7 +33,7 @@ h1 {
     float: left;
     padding: 40px;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;  
+    font-family: Georgia, 'Times New Roman', Times, serif; 
 
 }
 
@@ -47,14 +47,13 @@ h2  {
 a   {
     color: gray;
     float: right;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 20px 10px;
     margin-top: 20px;
     text-decoration: none;
 }
 a:hover   {
     color: lightgray;
-    float: right;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 20px 10px;
     margin-top: 20px;
     text-decoration: none;
 }
@@ -70,6 +69,10 @@ a:hover   {
 
 }
 
+img {
+    width: 200px;
+    height:200px;
+}
 .row   {
     clear: both;
     width: 430px;
@@ -117,6 +120,7 @@ a:hover   {
     bottom: 5px;
     width: 200px;
     padding-top: 15px;
+    
 }
 
 
@@ -133,14 +137,14 @@ p   {
 }
 
 textarea  {
-    width: 912px;
+    width: 100%;
     color:gray;
     border: solid 2px lightgray;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
     margin-bottom: 10px;
 
 }
-
+    } 
 form    {
     color:gray;
 }
@@ -164,4 +168,73 @@ footer  {
     bottom: 0;
     left: 0;
     width: 100%
+}
+
+
+
+@media screen and (max-width: 640px){
+header  {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin: 0;
+    
+}
+h1  {
+    width:100%;
+    margin: auto;
+    
+}
+.clearfix{
+    width:100%;
+    margin:auto;
+    overflow: hidden;
+    
+}
+#mainInfo  {
+    margin-top: 20px;
+    clear: both;
+    width: 100%;
+}
+a   {
+    margin-top: 0;
+    padding: 10px;
+    float:right;
+    
+}
+a:hover   {
+    padding:10px;
+    margin:0;
+    
+}
+
+.right  {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.left   {
+    flex: 100%;
+    max-width: 100%;
+}  
+
+
+@media screen and (max-width: 768px){
+#mainInfo  {
+    width: 75%;
+}
+.clearfix    {
+    width: 75%;  
+}
+
+}
+
+@media screen and (max-width: 980px){
+#mainInfo  {
+    width: 75%;
+}
+.clearfix    {
+    width: 75%;   
+}
+
 }
